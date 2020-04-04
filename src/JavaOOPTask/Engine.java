@@ -6,7 +6,6 @@ public class Engine {
 
     private int numberOfCylinders;
     private int maxSpeed;
-
     private int age = 0;
 
     Random rand = new Random();
@@ -15,7 +14,6 @@ public class Engine {
         this.maxSpeed = 140 + rand.nextInt(200);
         age++;
     }
-
 
     public void stopEngine(){
         System.out.println("Engine stopped");
