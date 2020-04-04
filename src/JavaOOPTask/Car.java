@@ -6,25 +6,32 @@ public class Car {
 
     private String brandName;
     private String type;
-    public int numberOfSeats;
+    private int numberOfSeats;
     private String serialNumberOfCar;
+
+    Random random;
+    SerialNumber serialNumber;
+    Engine engine;
+    Wheels wheels;
 
     public String getSerialNumberOfCar() {
         return serialNumberOfCar;
     }
 
-
-    Random random = new Random();
-    SerialNumber serialNumber = new SerialNumber();
-    Engine engine = new Engine();
-    Wheels wheels = new Wheels("Long", "Lassa");
-
+    public int getNumberOfSeats() { return numberOfSeats;}
 
     public Car(String brandName, String type){
         this.brandName = brandName;
         this.type = type;
+
+        this.random = new Random();
+        this.serialNumber = new SerialNumber();
+        this.engine = new Engine();
+        this.wheels = new Wheels("Long", "Lassa");
+
         this.serialNumberOfCar = serialNumber.serialNumber();
         this.numberOfSeats = 1 + random.nextInt(8);
+
 
         System.out.println("New car has been created successfully");
     }

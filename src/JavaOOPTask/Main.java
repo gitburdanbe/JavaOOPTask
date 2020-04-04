@@ -6,7 +6,7 @@ public class Main {
 
         Car newCar = new Car("BMW", "Sedan");
 
-        System.out.println("The number of the seats available: " + newCar.numberOfSeats);
+        System.out.println("The number of the seats available: " + newCar.getNumberOfSeats());
 
         System.out.println("The serial number of car is: " + newCar.getSerialNumberOfCar());
 

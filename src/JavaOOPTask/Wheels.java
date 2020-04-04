@@ -6,9 +6,9 @@ public class Wheels {
 
     Scanner scanner = new Scanner(System.in);
 
-    public String durability;
-    public String name;
-    public int age = 0;
+    private String durability;
+    private String name;
+    private int age = 0;
 
     public Wheels(String durability, String name){
         this.name = scanner.nextLine();
